@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework_swagger',
     'rest_framework.authtoken',
     'blog',
 ]
@@ -137,3 +138,5 @@ REST_FRAMEWORK = {
     # 'rest_framework.permissions.IsAdminUser',
     # ),
 }
+
+REST_FRAMEWORK = {'DEFAULT_SCHEMA_CLASS':'rest_framework.schemas.coreapi.AutoSchema' }
